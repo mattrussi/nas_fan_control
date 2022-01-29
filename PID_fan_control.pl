@@ -238,7 +238,8 @@ $fan_duty_low          =  30;
 $hd_fan_duty_high      = 100;    # percentage on, ie 100% is full speed.
 $hd_fan_duty_med_high  =  80;
 $hd_fan_duty_med_low   =  50;
-$hd_fan_duty_low       =  16;    # some 120mm fans stall below 30.
+# $hd_fan_duty_low       =  16;    # some 120mm fans stall below 30.
+$hd_fan_duty_low       =  25;    # some 120mm fans stall below 30.
 #$hd_fan_duty_start    =  60;    # HD fan duty cycle when script starts - defined in config file
 
 
@@ -257,9 +258,9 @@ $hd_fan_zone  = 1;
 ## these are the fan headers which are used to verify the fan zone is high. FAN1+ are all in Zone 0, FANA is Zone 1.
 ## cpu_fan_header should be in the cpu_fan_zone
 ## hd_fan_header should be in the hd_fan_zone
-$cpu_fan_header = "FAN2";                 # used for printing to standard output for debugging   
-$hd_fan_header  = "FANB";                 # used for printing to standard output for debugging   
-@hd_fan_list = ("FANA", "FANB", "FANC");  # used for logging to file  
+$cpu_fan_header = "FAN1";                 # used for printing to standard output for debugging   
+$hd_fan_header  = "FANA";                 # used for printing to standard output for debugging   
+@hd_fan_list = ("FANA");  # used for logging to file  
 
 
 ################
